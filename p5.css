@@ -1,0 +1,61 @@
+#input-options {
+}
+#input-options td {
+}
+#input-options tr:nth-child(2) td {
+  text-align: left;
+  padding: 10px 0;
+}
+#input-options tr:nth-child(1) td {
+  vertical-align: top;
+  padding: 5px 30px;
+}
+#board-size {
+  width: 20px;
+}
+#input-options input[type="button"] {
+  color: blue;
+  background-color: lightsalmon;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+}
+#output-display {
+  width: 100%;
+}
+#output-display tr {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.bingo-item {
+  display: flex;
+  justify-content: center;
+  align-items: ceneter;
+  padding: 40px 0;
+  border: 1px solid red;
+  border-radius: 15px;
+  width: 100%;
+  margin: 1px;
+}
+#calls{
+  display: flex;
+  width: 100%;
+  font-size: 2em;
+}
+.blue{
+  background-color: blue;
+}
+.magenta{
+  background-color:  magenta;
+}
+#bingo-svg{
+  display: none;
+}
+#bingo-svg img{
+  width: 300px;
+  height: auto;
+}
+#calls > div{
+  padding: 0 20px;
+}

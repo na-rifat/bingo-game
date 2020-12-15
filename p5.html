@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>    
+    <link rel="stylesheet" href="p5.css">    
+  </head>
+  <body>
+    <div>
+      <form id="input-form">
+        <fieldset>
+          <legend>1-Dim Bingo</legend>
+          <table id="input-options">
+            <tbody>
+              <tr>
+                <td>Size:<input type="text" name="board-size" id="board-size" /></td>
+                <td>
+                  <input type="radio" name="color" id="red" value="red"/> <label for="red">Red</label> <br> 
+                  <input type="radio" name="color" id="green" value="green"/> <label for="green">Green</label> <br> 
+                  <input type="radio" name="color" id="blue" value="blue"/> <label for="blue">Blue</label> <br>
+                </td>
+                <td>
+                  <label for="display-font">Font:</label>
+                  <select id="display-font" name="display-font">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option></select
+                  ><br />
+                  <label for="display-font-size">Font Size:</label>
+                  <select id="display-font-size" name="display-font-size">
+                    <option value="10px">10px</option>
+                    <option value="20px">20px</option>
+                    <option value="30px">30px</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <div id="buttons">
+                    <input type="button" value="Update Bingo Board" id="update-button"/>
+                    <input type="button" value="Call" id="call-button"/>
+                    <input type="button" value="Reset" id="reset-button"/>
+                  </div>
+                  <div id="bingo-svg">
+                      <img src="img/bingo.png" alt="">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+    <table id="output-display">
+        <tr>
+
+        </tr>
+    </table>
+    <h1 id="calls-count">Calls</h1>
+    <div id="calls">
+        
+    </div>
+    <script src="p5.js" defer></script>    
+  </body>
+</html>
